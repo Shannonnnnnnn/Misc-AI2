@@ -1,0 +1,14 @@
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Name = "ButtonFrameExample"
+gui.Parent = player.PlayerGui
+
+local button = Instance.new("TextButton")
+button.Text = "Open Frame"
+button.Size = UDim2.new(0, 100, 0, 30)
+button.Position = UDim2.new(1, -120, 0, 20)
+button.Parent = gui
+
+button.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Shannonnnnnnn/Misc-AI/main/Misc%20AI"))(); 
+end)
